@@ -1,0 +1,442 @@
+.help-page {
+	font-size: 0.85em;
+}
+
+.modal {
+}
+.vertical-alignment-helper {
+	display:table;
+	height: 100%;
+	width: 75%;
+}
+.vertical-align-center {
+	/* To center vertically */
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.modal-content {
+	/* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+	width:inherit;
+	height:inherit;
+	/* To center horizontally */
+	margin: 0 auto;
+}
+
+.traffic-page {}
+
+.weather-page {}
+
+.gps_page {}
+
+.map-container {
+	position: relative;
+}
+
+.world-map {
+	background-image: url(../img/world.png);
+	background-position: 1186px 591px;
+	margin-bottom: 4px;
+	/* this will be set dynamically to center map at gps location */
+	/*
+	width: 100%;
+	height: 300px;
+*/
+}
+
+.mark-position {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 18px;
+	color: white;
+}
+
+.section_invisible {
+	display: none;
+}
+
+.text-normal {
+	font-weight: 100;
+}
+
+.reset-flow {
+	clear: both;
+}
+
+.separator {
+	height: 1px;
+	border-bottom: 1px solid #cccccc;
+	margin: 0 2px 4px 2px;
+}
+
+.label_adj {
+	margin-left: -6px;
+	margin-right: -6px;
+}
+
+.col-padding-shift-right {
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+.col-padding-shift-left {
+	margin-left: 10px;
+	margin-right: -10px;
+}
+
+.feature-icon {
+	font-size: 44px;
+	text-align: center;
+	line-height: 68px;
+	opacity: 0.8;
+	width: 72px;
+	height: 72px;
+	border: 3px solid;
+	border-radius: 200px;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.list-simple {
+	padding-left: 12px;
+	list-style: none;
+}
+
+.fa-ascent:before {
+	content: "\f176";
+}
+
+.fa-descent:before {
+	content: "\f175";
+}
+
+.fa-ascent,
+.fa-descent,
+.fa-airplane-solid,
+.fa-airplane-hollow {
+	font-size: 12px;
+}
+
+.fa-ascent,
+.fa-descent {
+	display: inherit;
+}
+
+.fa-airplane-solid:before {
+	content: "\f1d8";
+}
+
+.fa-airplane-hollow:before {
+	content: "\f1d9";
+}
+
+.report_TAF {
+	border-radius: 5px;
+	background-color: cornsilk;
+	color: black;
+}
+
+.report_PIREP {
+	border-radius: 5px;
+	background-color: gainsboro;
+	color: black;
+}
+
+.report_WINDS {
+	border-radius: 5px;
+	background-color: lavender;
+	color: black;
+}
+
+.flight_condition_VFR {
+	border-radius: 5px;
+	background-color: forestgreen;
+	color: white;
+}
+
+.flight_condition_MVFR {
+	border-radius: 5px;
+	background-color: blue;
+	color: white;
+}
+
+.flight_condition_IFR {
+	border-radius: 5px;
+	background-color: crimson;
+	color: white;
+}
+
+.flight_condition_LIFR {
+	border-radius: 5px;
+	background-color: darkorchid;
+	color: white;
+}
+
+.paperairplane_left,
+.traffic-style1,
+.traffic-style10,
+.traffic-style11 {
+	color: #000000;
+	background-color: cornflowerblue;
+}
+
+.traffic-style12,
+.traffic-style13,
+.traffic-style14 {
+	color: #000000;
+	background-color: skyblue;
+}
+
+.paperairplane_right,
+.traffic-style2,
+.traffic-style20,
+.traffic-style21 {
+	color: #000000;
+	background-color: darkkhaki
+}
+
+.traffic-style22,
+.traffic-style23,
+.traffic-style24 {
+	color: #000000;
+	background-color: khaki
+}
+
+.icon-red {
+	color: crimson;
+}
+
+.icon-green {
+	color: forestgreen;
+}
+
+.icon-blue {
+	color: blue;
+}
+
+.icon-white {
+	color: white;
+}
+
+.icon-black {
+	color: black;
+}
+
+.icon-red {
+	color: crimson;
+}
+
+.bar_container {
+	display: inline-block;
+	border: 1px solid #cccccc;
+	width: 100%;
+	border-radius: 2px;
+	font-size: 0.75em;
+}
+
+.bar_display {
+	padding: 1px 2px 1px 3px;
+}
+
+.fake-btn {
+	background-color:#ccc;
+	margin-bottom:0;
+	font-weight:400; 
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	border:1px solid transparent;
+	white-space:nowrap;
+	padding: 6px 12px;
+	line-height: 1.43;
+	border-radius:4px;
+}
+.fake-btn-block {
+	display:inline-block;
+	width: 100%;
+}
+
+
+/* ***************************************************************************
+everything below this comment represents tweaks to the mobile-angular-uis CSS
+*************************************************************************** */
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../maui/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.row {
+	margin-left: -6px;
+	margin-right: -6px;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+input[type="number_format"] {
+	text-align: end;
+}
+
+.app-body,
+.panel-default,
+.scrollable-content,
+.form-group {
+	background-color: #ffffff;
+}
+
+.app-content {
+	margin-top: 4px;
+}
+
+.sidebar-header,
+.app-name {
+	line-height: 50px;
+	color: #000;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ccc;
+}
+
+.panel-heading {
+	padding: 4px 4px 4px 4px;
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-bottom: 1px solid #cccccc;
+	font-weight: bold;
+}
+
+.panel-group .panel-heading {
+	border-bottom: inherit;
+}
+
+.panel_label {
+	font-size: 16px;
+	margin-top: 4px;
+	display: inline-block;
+	line-height: 12px;
+	vertical-align: bottom;
+	padding-bottom: 2px;
+}
+
+.panel-body {
+	padding: 8px 4px 4px 4px;
+}
+
+.control-label {
+	line-height: 28px;
+	margin-bottom: 4px;
+}
+
+.switch {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	width: 52px;
+	height: 28px;
+	margin-bottom: 4px;
+}
+
+.switch .switch-handle {
+	width: 26px;
+	height: 28px;
+}
+
+.switch.active .switch-handle {
+	border-color: #007aff;
+	-webkit-transform: translate(26px, 0);
+	-ms-transform: translate(26px, 0);
+	-o-transform: translate(26px, 0);
+	transform: translate(26px, 0);
+}
+
+pre {
+	display: block;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.42857143;
+	word-break: break-all;
+	word-wrap: break-word;
+	color: #333333;
+	background-color: inherit;
+	border: 0px;
+	border-radius: 0px;
+}
+
+body {
+    font-weight: 400;
+}
+
+/* change right sidebar behavior to always push */
+
+@media (min-width: 992px) {
+	.sidebar-right-in .app {
+		margin-right: 0;
+		right: 0;
+	}
+	.sidebar-right-in .app {
+		width: auto;
+		-webkit-transform: translate3d(-300px, 0, 0)!important;
+		-moz-transform: translate3d(-300px, 0, 0)!important;
+		transform: translate3d(-300px, 0, 0)!important;
+		position: relative;
+		-webkit-transition: -webkit-transform 0 ease;
+		-moz-transition: -moz-transform 0 ease;
+		transition: transform 0 ease;
+	}
+}
